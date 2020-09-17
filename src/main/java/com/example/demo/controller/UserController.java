@@ -30,7 +30,7 @@ public class UserController {
     public ModelAndView allUsers(){
         List<User> users = userService.listAll();
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("admin");
+        modelAndView.setViewName("admin1");
         modelAndView.addObject("users",users);
         modelAndView.addObject("user", new User());
         return modelAndView;
